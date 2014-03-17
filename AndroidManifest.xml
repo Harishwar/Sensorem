@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.harishwar.sensorem"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/ThemeSelector" >
+        <activity
+            android:name="com.harishwar.sensorem.MainScreenActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Accelerometer"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AmbientTemperature"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Gravity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Gyroscope"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Light"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".LinearAcceleration"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MagneticField"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Pressure"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Proximity"
+            android:screenOrientation="portrait"/>        
+        <activity
+            android:name=".RelativeHumidity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RotationVector"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
